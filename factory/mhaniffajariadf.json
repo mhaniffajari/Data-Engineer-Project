@@ -1,0 +1,9 @@
+{
+	"name": "mhaniffajariadf",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2028b5e9-5bcc-4379-9e19-b49a730e66a2",
+		"tenantId": "67ca08cc-6bb4-4423-bcc1-09ce704435fe"
+	}
+}
