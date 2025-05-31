@@ -1,0 +1,11 @@
+{
+  "namespace": "com.datatalksclub.bitcoin",
+  "type": "record",
+  "name": "BitcoinPriceKey",
+  "fields": [
+    {
+      "name": "Date",
+      "type": "string"
+    }
+  ]
+}

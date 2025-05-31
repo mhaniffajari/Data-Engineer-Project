@@ -1,0 +1,3 @@
+# Use this version as of Sep 2021
+google-cloud-storage==1.42.2
+#google-cloud-storage
