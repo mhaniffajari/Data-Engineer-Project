@@ -1,0 +1,11 @@
+{
+  "namespace": "com.fraud.detection",
+  "type": "record",
+  "name": "FraudDetection",
+  "fields": [
+    {
+      "name": "step",
+      "type": "int"
+    }
+  ]
+}
