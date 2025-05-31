@@ -1,0 +1,7 @@
+--CREATE EXTERNAL DATA SOURCE
+CREATE EXTERNAL DATA SOURCE [ADLS_DS_Bigdata]
+WITH (
+	LOCATION = N'abfss://hanifsystem@hanifdatalake.dfs.core.windows.net')
+GO
+--CREATE EXTERNAL FORMAT
+CREATE EXTERNAL FILE FORMAT [SynapseParquetFormat] WITH (FORMAT_TYPE = PARQUET)
