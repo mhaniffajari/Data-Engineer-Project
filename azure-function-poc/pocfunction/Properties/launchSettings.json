@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "pocfunction": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7216"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 30183,
+      "useSSL": false
+    }
+  }
+}
