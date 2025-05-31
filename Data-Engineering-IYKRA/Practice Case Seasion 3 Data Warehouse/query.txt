@@ -1,0 +1,12 @@
+WITH CTE
+AS
+(SELECT totals_transactions, PARSE_DATE('%Y%m%d', CAST(date AS STRING)) AS date, hits_transaction_transactionId,geoNetwork_country ,SUM(totals_transactions) AS total_transaction,COUNT(*) AS CNT, channelGrouping
+FROM `data-to-insights.ecommerce.rev_transactions`
+GROUP BY totals_transactions, date,geoNetwork_country,hits_transaction_transactionId,channelGrouping
+HAVING COUNT(*) > 1)
+SELECT ARRAY_AGG(STRUCT(total_transaction,date)ORDER BY date ASC) AS trans
+,geoNetwork_country AS country,channelGrouping as channel
+FROM CTE
+GROUP BY country,channel
+
+https://console.cloud.google.com/bigquery?sq=648907689023:65ac59e57892432caf8f163c67601941

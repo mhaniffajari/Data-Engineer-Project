@@ -1,0 +1,7 @@
+FROM python:latest
+
+WORKDIR /usr/local/bin
+
+COPY Practice_Case_Session_1.py .
+
+CMD ["Practice_Case_Session_1.py", "-OPTIONAL_FLAG"]
