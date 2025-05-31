@@ -1,0 +1,24 @@
+[2022-09-24 03:43:17,015] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcp.greet scheduled__2021-10-14T00:00:00+00:00 [queued]>
+[2022-09-24 03:43:17,125] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcp.greet scheduled__2021-10-14T00:00:00+00:00 [queued]>
+[2022-09-24 03:43:17,129] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-24 03:43:17,171] {taskinstance.py:1239} INFO - Starting attempt 1 of 6
+[2022-09-24 03:43:17,172] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-24 03:43:17,412] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): greet> on 2021-10-14 00:00:00+00:00
+[2022-09-24 03:43:17,443] {standard_task_runner.py:52} INFO - Started process 688 to run task
+[2022-09-24 03:43:17,446] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcp', 'greet', 'scheduled__2021-10-14T00:00:00+00:00', '--job-id', '85', '--raw', '--subdir', 'DAGS_FOLDER/task_2.py', '--cfg-path', '/tmp/tmpxhdf8h6m', '--error-file', '/tmp/tmp62gtc9od']
+[2022-09-24 03:43:17,487] {standard_task_runner.py:77} INFO - Job 85: Subtask greet
+[2022-09-24 03:43:17,862] {logging_mixin.py:109} INFO - Running <TaskInstance: data_ingestion_gcp.greet scheduled__2021-10-14T00:00:00+00:00 [running]> on host 9ec7cb7c64d4
+[2022-09-24 03:43:18,848] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Hanif
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcp
+AIRFLOW_CTX_TASK_ID=greet
+AIRFLOW_CTX_EXECUTION_DATE=2021-10-14T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-10-14T00:00:00+00:00
+[2022-09-24 03:43:18,861] {logging_mixin.py:109} INFO - some dict:  {'a': 1, 'b': 2}
+[2022-09-24 03:43:19,150] {logging_mixin.py:109} INFO - Hello World! My name is Hanif Fajari, and I am 21 years old!
+[2022-09-24 03:43:19,168] {python.py:175} INFO - Done. Returned value was: None
+[2022-09-24 03:43:19,287] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=data_ingestion_gcp, task_id=greet, execution_date=20211014T000000, start_date=20220924T034317, end_date=20220924T034319
+[2022-09-24 03:43:19,548] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-24 03:43:19,873] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
