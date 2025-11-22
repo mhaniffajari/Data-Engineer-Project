@@ -1,0 +1,25 @@
+{
+  "realisasi_bus": {
+    "source": "data target/raw/dummy_realisasi_bus.csv",
+    "stage": "data target/stage/realisasi_bus.csv",
+    "target": "data target/target/realisasi_bus.csv",
+    "pk": "bus_body_no",
+    "date_columns": {
+      "tanggal_realisasi": "%d/%M/%Y"
+    }
+  },
+
+  "routes": {
+    "source": "data target/raw/dummy_routes.csv",
+    "stage": "data target/stage/routes.csv",
+    "target": "data target/target/routes.csv",
+    "pk": "route_code"
+  },
+
+  "shelter_corridor": {
+    "source": "data target/raw/dummy_shelter_corridor.csv",
+    "stage": "data target/stage/shelter_corridor.csv",
+    "target": "data target/target/shelter_corridor.csv",
+    "pk": "shelter_name_var"
+  }
+}

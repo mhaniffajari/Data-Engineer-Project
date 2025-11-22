@@ -1,0 +1,85 @@
+etl_name,process,start_time,end_time,source_count,destination_count,status,error_message
+raw_csv_processing,RAW CSV → RAW CSV,2025-11-15 13:50:38.008215,2025-11-15 13:50:38.008215,data source,data target/raw,74,74,SUCCESS,
+stage_csv_to_csv,stage,2025-11-15 13:50:40.761661,2025-11-15 13:50:40.768546,data target/raw/dummy_realisasi_bus.csv,data target/stage/realisasi_bus.csv,515,515,SUCCESS,
+stage_csv_to_csv,stage,2025-11-15 13:50:40.768546,2025-11-15 13:50:40.777545,data target/raw/dummy_routes.csv,data target/stage/routes.csv,21,21,SUCCESS,
+stage_csv_to_csv,stage,2025-11-15 13:50:40.777545,2025-11-15 13:50:40.781383,data target/raw/dummy_shelter_corridor.csv,data target/stage/shelter_corridor.csv,74,74,SUCCESS,
+raw_csv_processing,RAW CSV → RAW CSV,2025-11-15 13:51:55.201149,2025-11-15 13:51:55.201149,data source,data target/raw,74,74,SUCCESS,
+stage_csv_to_csv,stage,2025-11-15 13:51:57.936283,2025-11-15 13:51:57.944303,data target/raw/dummy_realisasi_bus.csv,data target/stage/realisasi_bus.csv,515,515,SUCCESS,
+stage_csv_to_csv,stage,2025-11-15 13:51:57.944303,2025-11-15 13:51:57.944303,data target/raw/dummy_routes.csv,data target/stage/routes.csv,21,21,SUCCESS,
+stage_csv_to_csv,stage,2025-11-15 13:51:57.944303,2025-11-15 13:51:57.952421,data target/raw/dummy_shelter_corridor.csv,data target/stage/shelter_corridor.csv,74,74,SUCCESS,
+raw_csv_processing,RAW CSV → RAW CSV,2025-11-15 13:54:50.418805,2025-11-15 13:54:50.418805,data source,data target/raw,74,74,SUCCESS,
+stage_csv_to_csv,stage,2025-11-15 13:54:53.156130,2025-11-15 13:54:53.169396,data target/raw/dummy_realisasi_bus.csv,data target/stage/realisasi_bus.csv,515,515,SUCCESS,
+stage_csv_to_csv,stage,2025-11-15 13:54:53.169396,2025-11-15 13:54:53.169396,data target/raw/dummy_routes.csv,data target/stage/routes.csv,21,21,SUCCESS,
+stage_csv_to_csv,stage,2025-11-15 13:54:53.171785,2025-11-15 13:54:53.173454,data target/raw/dummy_shelter_corridor.csv,data target/stage/shelter_corridor.csv,74,74,SUCCESS,
+realisasi_bus,target_merge,2025-11-15 13:54:53.200346,2025-11-15 13:54:53.218430,data target/raw/dummy_realisasi_bus.csv,data target/target/realisasi_bus.csv,515,515,SUCCESS,
+routes,target_merge,2025-11-15 13:54:53.219427,2025-11-15 13:54:53.220723,data target/raw/dummy_routes.csv,data target/target/routes.csv,21,21,SUCCESS,
+shelter_corridor,target_merge,2025-11-15 13:54:53.222761,2025-11-15 13:54:53.223807,data target/raw/dummy_shelter_corridor.csv,data target/target/shelter_corridor.csv,74,74,SUCCESS,
+raw_csv_processing,RAW CSV → RAW CSV,2025-11-15 13:57:53.415232,2025-11-15 13:57:53.415232,data source,data target/raw,74,74,SUCCESS,
+stage_csv_to_csv,RAW → STAGE CSV,2025-11-15 13:57:56.160908,2025-11-15 13:57:56.176638,data target/raw/dummy_realisasi_bus.csv,data target/stage/realisasi_bus.csv,515,515,SUCCESS,
+stage_csv_to_csv,RAW → STAGE CSV,2025-11-15 13:57:56.176638,2025-11-15 13:57:56.179972,data target/raw/dummy_routes.csv,data target/stage/routes.csv,21,21,SUCCESS,
+stage_csv_to_csv,RAW → STAGE CSV,2025-11-15 13:57:56.179972,2025-11-15 13:57:56.183782,data target/raw/dummy_shelter_corridor.csv,data target/stage/shelter_corridor.csv,74,74,SUCCESS,
+realisasi_bus,target_merge,2025-11-15 13:57:56.214832,2025-11-15 13:57:56.228317,data target/raw/dummy_realisasi_bus.csv,data target/target/realisasi_bus.csv,515,515,SUCCESS,
+routes,target_merge,2025-11-15 13:57:56.230650,2025-11-15 13:57:56.232586,data target/raw/dummy_routes.csv,data target/target/routes.csv,21,21,SUCCESS,
+shelter_corridor,target_merge,2025-11-15 13:57:56.232586,2025-11-15 13:57:56.239668,data target/raw/dummy_shelter_corridor.csv,data target/target/shelter_corridor.csv,74,74,SUCCESS,
+raw_csv_processing,RAW CSV → RAW CSV,2025-11-15 13:59:18.247236,2025-11-15 13:59:18.247236,data source,data target/raw,74,74,SUCCESS,
+stage_csv_to_csv,RAW → STAGE CSV,2025-11-15 13:59:20.984711,2025-11-15 13:59:20.992908,data target/raw/dummy_realisasi_bus.csv,data target/stage/realisasi_bus.csv,515,515,SUCCESS,
+stage_csv_to_csv,RAW → STAGE CSV,2025-11-15 13:59:20.992908,2025-11-15 13:59:21.000520,data target/raw/dummy_routes.csv,data target/stage/routes.csv,21,21,SUCCESS,
+stage_csv_to_csv,RAW → STAGE CSV,2025-11-15 13:59:21.000520,2025-11-15 13:59:21.002449,data target/raw/dummy_shelter_corridor.csv,data target/stage/shelter_corridor.csv,74,74,SUCCESS,
+realisasi_bus,target_merge,2025-11-15 13:59:21.035081,2025-11-15 13:59:21.049043,data target/raw/dummy_realisasi_bus.csv,data target/target/realisasi_bus.csv,515,515,SUCCESS,
+routes,target_merge,2025-11-15 13:59:21.050730,2025-11-15 13:59:21.053766,data target/raw/dummy_routes.csv,data target/target/routes.csv,21,21,SUCCESS,
+shelter_corridor,target_merge,2025-11-15 13:59:21.054903,2025-11-15 13:59:21.059305,data target/raw/dummy_shelter_corridor.csv,data target/target/shelter_corridor.csv,74,74,SUCCESS,
+raw_csv_processing,RAW CSV → RAW CSV,2025-11-15 14:00:12.963458,2025-11-15 14:00:12.963458,data source,data target/raw,74,74,SUCCESS,
+stage_csv_to_csv,RAW → STAGE CSV,2025-11-15 14:00:15.684674,2025-11-15 14:00:15.696699,data target/raw/dummy_realisasi_bus.csv,data target/stage/realisasi_bus.csv,515,515,SUCCESS,
+stage_csv_to_csv,RAW → STAGE CSV,2025-11-15 14:00:15.696699,2025-11-15 14:00:15.698701,data target/raw/dummy_routes.csv,data target/stage/routes.csv,21,21,SUCCESS,
+stage_csv_to_csv,RAW → STAGE CSV,2025-11-15 14:00:15.698701,2025-11-15 14:00:15.702043,data target/raw/dummy_shelter_corridor.csv,data target/stage/shelter_corridor.csv,74,74,SUCCESS,
+realisasi_bus,target_merge,2025-11-15 14:00:15.730015,2025-11-15 14:00:15.750486,data target/raw/dummy_realisasi_bus.csv,data target/target/realisasi_bus.csv,515,515,SUCCESS,
+routes,target_merge,2025-11-15 14:00:15.750486,2025-11-15 14:00:15.750486,data target/raw/dummy_routes.csv,data target/target/routes.csv,21,21,SUCCESS,
+shelter_corridor,target_merge,2025-11-15 14:00:15.756638,2025-11-15 14:00:15.760019,data target/raw/dummy_shelter_corridor.csv,data target/target/shelter_corridor.csv,74,74,SUCCESS,
+raw_csv_processing,RAW CSV → RAW CSV,2025-11-15 14:01:15.053038,2025-11-15 14:01:15.053038,data source,data target/raw,74,74,SUCCESS,
+stage_csv_to_csv,RAW → STAGE CSV,2025-11-15 14:01:17.783284,2025-11-15 14:01:17.797890,data target/raw/dummy_realisasi_bus.csv,data target/stage/realisasi_bus.csv,515,515,SUCCESS,
+stage_csv_to_csv,RAW → STAGE CSV,2025-11-15 14:01:17.797890,2025-11-15 14:01:17.800838,data target/raw/dummy_routes.csv,data target/stage/routes.csv,21,21,SUCCESS,
+stage_csv_to_csv,RAW → STAGE CSV,2025-11-15 14:01:17.800838,2025-11-15 14:01:17.802863,data target/raw/dummy_shelter_corridor.csv,data target/stage/shelter_corridor.csv,74,74,SUCCESS,
+insert_to_transaksi_bus(),STAGE → POSTGRES,2025-11-15 14:01:17.829802,2025-11-15 14:01:17.829802,,,0,0,FAILED,
+insert_to_transaksi_bus(),STAGE → POSTGRES,2025-11-15 14:01:17.802863,2025-11-15 14:01:17.829802,stage csv,postgres.stage,,,SUCCESS,
+insert_to_transaksi_halte(),STAGE → POSTGRES,2025-11-15 14:01:17.857091,2025-11-15 14:01:17.857091,,,0,0,FAILED,
+insert_to_transaksi_halte(),STAGE → POSTGRES,2025-11-15 14:01:17.829802,2025-11-15 14:01:17.857091,stage csv,postgres.stage,,,SUCCESS,
+realisasi_bus,target_merge,2025-11-15 14:01:17.857091,2025-11-15 14:01:17.875880,data target/raw/dummy_realisasi_bus.csv,data target/target/realisasi_bus.csv,515,515,SUCCESS,
+routes,target_merge,2025-11-15 14:01:17.877224,2025-11-15 14:01:17.880381,data target/raw/dummy_routes.csv,data target/target/routes.csv,21,21,SUCCESS,
+shelter_corridor,target_merge,2025-11-15 14:01:17.881627,2025-11-15 14:01:17.885670,data target/raw/dummy_shelter_corridor.csv,data target/target/shelter_corridor.csv,74,74,SUCCESS,
+merge_transaksi_bus(),target_csv_to_postgres,2025-11-15 14:01:17.907485,2025-11-15 14:01:17.907485,,,0,0,FAILED,
+merge_transaksi_halte(),target_csv_to_postgres,2025-11-15 14:01:17.907485,2025-11-15 14:01:17.907485,,,0,0,FAILED,
+target_csv_to_postgres,target→postgres,2025-11-15 14:01:17.886468,2025-11-15 14:01:17.907485,procedures,postgres.target,,,SUCCESS,
+raw_csv_processing,RAW CSV → RAW CSV,2025-11-15 14:01:31.802172,2025-11-15 14:01:31.802172,data source,data target/raw,74,74,SUCCESS,
+stage_csv_to_csv,RAW → STAGE CSV,2025-11-15 14:01:34.518996,2025-11-15 14:01:34.532498,data target/raw/dummy_realisasi_bus.csv,data target/stage/realisasi_bus.csv,515,515,SUCCESS,
+stage_csv_to_csv,RAW → STAGE CSV,2025-11-15 14:01:34.532498,2025-11-15 14:01:34.536160,data target/raw/dummy_routes.csv,data target/stage/routes.csv,21,21,SUCCESS,
+stage_csv_to_csv,RAW → STAGE CSV,2025-11-15 14:01:34.536160,2025-11-15 14:01:34.536160,data target/raw/dummy_shelter_corridor.csv,data target/stage/shelter_corridor.csv,74,74,SUCCESS,
+insert_to_transaksi_bus(),STAGE → POSTGRES,2025-11-15 14:01:34.572883,2025-11-15 14:01:34.573920,,,0,0,FAILED,"(psycopg2.errors.SyntaxError) syntax error at or near ""(""
+LINE 1: CALL insert_to_transaksi_bus()()
+                                      ^
+
+[SQL: CALL insert_to_transaksi_bus()()]
+(Background on this error at: https://sqlalche.me/e/20/f405)"
+insert_to_transaksi_bus(),STAGE → POSTGRES,2025-11-15 14:01:34.536160,2025-11-15 14:01:34.573920,stage csv,postgres.stage,,,SUCCESS,
+insert_to_transaksi_halte(),STAGE → POSTGRES,2025-11-15 14:01:34.606793,2025-11-15 14:01:34.606793,,,0,0,FAILED,"(psycopg2.errors.SyntaxError) syntax error at or near ""(""
+LINE 1: CALL insert_to_transaksi_halte()()
+                                        ^
+
+[SQL: CALL insert_to_transaksi_halte()()]
+(Background on this error at: https://sqlalche.me/e/20/f405)"
+insert_to_transaksi_halte(),STAGE → POSTGRES,2025-11-15 14:01:34.574922,2025-11-15 14:01:34.606793,stage csv,postgres.stage,,,SUCCESS,
+realisasi_bus,target_merge,2025-11-15 14:01:34.618756,2025-11-15 14:01:34.634621,data target/raw/dummy_realisasi_bus.csv,data target/target/realisasi_bus.csv,515,515,SUCCESS,
+routes,target_merge,2025-11-15 14:01:34.635626,2025-11-15 14:01:34.638414,data target/raw/dummy_routes.csv,data target/target/routes.csv,21,21,SUCCESS,
+shelter_corridor,target_merge,2025-11-15 14:01:34.640606,2025-11-15 14:01:34.643714,data target/raw/dummy_shelter_corridor.csv,data target/target/shelter_corridor.csv,74,74,SUCCESS,
+merge_transaksi_bus(),target_csv_to_postgres,2025-11-15 14:01:34.672409,2025-11-15 14:01:34.674230,,,0,0,FAILED,"(psycopg2.errors.SyntaxError) syntax error at or near ""(""
+LINE 1: CALL merge_transaksi_bus()()
+                                  ^
+
+[SQL: CALL merge_transaksi_bus()()]
+(Background on this error at: https://sqlalche.me/e/20/f405)"
+merge_transaksi_halte(),target_csv_to_postgres,2025-11-15 14:01:34.674684,2025-11-15 14:01:34.675383,,,0,0,FAILED,"(psycopg2.errors.SyntaxError) syntax error at or near ""(""
+LINE 1: CALL merge_transaksi_halte()()
+                                    ^
+
+[SQL: CALL merge_transaksi_halte()()]
+(Background on this error at: https://sqlalche.me/e/20/f405)"
+target_csv_to_postgres,target→postgres,2025-11-15 14:01:34.644577,2025-11-15 14:01:34.675383,procedures,postgres.target,,,SUCCESS,
