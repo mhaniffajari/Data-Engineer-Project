@@ -83,3 +83,37 @@ LINE 1: CALL merge_transaksi_halte()()
 [SQL: CALL merge_transaksi_halte()()]
 (Background on this error at: https://sqlalche.me/e/20/f405)"
 target_csv_to_postgres,target→postgres,2025-11-15 14:01:34.644577,2025-11-15 14:01:34.675383,procedures,postgres.target,,,SUCCESS,
+raw_csv_processing,RAW CSV → RAW CSV,2025-11-22 12:30:59.371828,2025-11-22 12:30:59.371828,data source,data target/raw,74,74,SUCCESS,
+stage_csv_to_csv,RAW → STAGE CSV,2025-11-22 12:31:02.133643,2025-11-22 12:31:02.149705,data target/raw/dummy_realisasi_bus.csv,data target/stage/realisasi_bus.csv,515,515,SUCCESS,
+stage_csv_to_csv,RAW → STAGE CSV,2025-11-22 12:31:02.150703,2025-11-22 12:31:02.152698,data target/raw/dummy_routes.csv,data target/stage/routes.csv,21,21,SUCCESS,
+stage_csv_to_csv,RAW → STAGE CSV,2025-11-22 12:31:02.152698,2025-11-22 12:31:02.155899,data target/raw/dummy_shelter_corridor.csv,data target/stage/shelter_corridor.csv,74,74,SUCCESS,
+insert_to_transaksi_bus(),STAGE → POSTGRES,2025-11-22 12:31:02.227480,2025-11-22 12:31:02.231636,,,0,0,FAILED,"(psycopg2.errors.SyntaxError) syntax error at or near ""(""
+LINE 1: CALL insert_to_transaksi_bus()()
+                                      ^
+
+[SQL: CALL insert_to_transaksi_bus()()]
+(Background on this error at: https://sqlalche.me/e/20/f405)"
+insert_to_transaksi_bus(),STAGE → POSTGRES,2025-11-22 12:31:02.155899,2025-11-22 12:31:02.232648,stage csv,postgres.stage,,,SUCCESS,
+insert_to_transaksi_halte(),STAGE → POSTGRES,2025-11-22 12:31:02.256243,2025-11-22 12:31:02.257266,,,0,0,FAILED,"(psycopg2.errors.SyntaxError) syntax error at or near ""(""
+LINE 1: CALL insert_to_transaksi_halte()()
+                                        ^
+
+[SQL: CALL insert_to_transaksi_halte()()]
+(Background on this error at: https://sqlalche.me/e/20/f405)"
+insert_to_transaksi_halte(),STAGE → POSTGRES,2025-11-22 12:31:02.232648,2025-11-22 12:31:02.257266,stage csv,postgres.stage,,,SUCCESS,
+realisasi_bus,target_merge,2025-11-22 12:31:02.266797,2025-11-22 12:31:02.282988,data target/raw/dummy_realisasi_bus.csv,data target/target/realisasi_bus.csv,515,515,SUCCESS,
+routes,target_merge,2025-11-22 12:31:02.285234,2025-11-22 12:31:02.288254,data target/raw/dummy_routes.csv,data target/target/routes.csv,21,21,SUCCESS,
+shelter_corridor,target_merge,2025-11-22 12:31:02.289251,2025-11-22 12:31:02.293575,data target/raw/dummy_shelter_corridor.csv,data target/target/shelter_corridor.csv,74,74,SUCCESS,
+merge_transaksi_bus(),target_csv_to_postgres,2025-11-22 12:31:02.321008,2025-11-22 12:31:02.321008,,,0,0,FAILED,"(psycopg2.errors.SyntaxError) syntax error at or near ""(""
+LINE 1: CALL merge_transaksi_bus()()
+                                  ^
+
+[SQL: CALL merge_transaksi_bus()()]
+(Background on this error at: https://sqlalche.me/e/20/f405)"
+merge_transaksi_halte(),target_csv_to_postgres,2025-11-22 12:31:02.322022,2025-11-22 12:31:02.322022,,,0,0,FAILED,"(psycopg2.errors.SyntaxError) syntax error at or near ""(""
+LINE 1: CALL merge_transaksi_halte()()
+                                    ^
+
+[SQL: CALL merge_transaksi_halte()()]
+(Background on this error at: https://sqlalche.me/e/20/f405)"
+target_csv_to_postgres,target→postgres,2025-11-22 12:31:02.293575,2025-11-22 12:31:02.322022,procedures,postgres.target,,,SUCCESS,
